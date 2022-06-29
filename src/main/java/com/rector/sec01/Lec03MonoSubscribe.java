@@ -1,5 +1,6 @@
-package com.rector.unit01;
+package com.rector.sec01;
 
+import com.rector.sec01.courseutil.Util;
 import reactor.core.publisher.Mono;
 
 public class Lec03MonoSubscribe {
@@ -11,9 +12,9 @@ public class Lec03MonoSubscribe {
         // we can log information using mono.log
         mono.log().subscribe(i-> System.out.println("Received :" + i));
         mono.subscribe(
-                i -> System.out.println("Received :" + i),
-                err -> System.out.println(err.getMessage()),
-                () -> System.out.println("completed")
+                Util.onNext(),
+                Util.onError(),
+                Util.onnComplete()
         );
     }
 }

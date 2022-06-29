@@ -1,7 +1,5 @@
-package com.rector.unit01;
+package com.rector.sec01;
 
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Lec01Stream {

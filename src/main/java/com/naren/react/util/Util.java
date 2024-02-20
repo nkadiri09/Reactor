@@ -1,4 +1,4 @@
-package com.naren.react;
+package com.naren.react.util;
 
 import com.github.javafaker.Faker;
 
